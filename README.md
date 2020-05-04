@@ -1,1 +1,1 @@
-# balancer
+# JS Load-Balancer for widgets
