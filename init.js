@@ -21,7 +21,7 @@ var LVM = (function (LVM) {
               } : null;
               cs.parentNode.insertBefore(s, cs)
           })(w, p + '?url=' + encodeURIComponent(w))
-      })(document, 'https://cdn.slon.biz/forms/widget.contactform.min.js?promoId=1042', '/proxy.php');
+      })(document, 'https://cdn.slon.biz/widget.js?promoId=' + promoId, '/proxy.php');
     };
 
     /* ----------------------------------------------------------- */
