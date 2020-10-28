@@ -20,8 +20,8 @@
     }
 
     function init() {
-        if ('requestIdleCallback' in window) {
-            window.requestIdleCallback(load, { timeout: 3000 });
+        if ('requestIdleCallback' in w) {
+            w.requestIdleCallback(load, { timeout: 3000 });
         } else {
             setTimeout(load, 3000);
         }
