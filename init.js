@@ -7,12 +7,20 @@
                 continue;
             }
 
+            var cs = w.wreg.widgets[i][0];
+            var promoId = w.wreg.widgets[i][1];
+
             var x = d.createElement('script');
             x.async = 1;
             x.charset = 'utf-8';
-            x.src = p + '?url=' + encodeURIComponent('https://slon.biz/forms/widget.min.js?promoId=' + w.wreg.widgets[i][1]);
-
-            var cs = w.wreg.widgets[i][0];
+            x.src = 'https://slon.biz/forms/widget.min.js?promoId=' + promoId;
+            x.onerror = function () {
+                var newX = d.createElement('script');
+                newX.async = 1;
+                newX.charset = 'utf-8';
+                newX.src = p + '?url=' + encodeURIComponent('https://slon.biz/forms/widget.min.js?promoId=' + promoId);
+                cs.parentNode.insertBefore(newX, cs);
+            };
             cs.parentNode.insertBefore(x, cs);
 
             w.wreg.widgets[i][3] = true;
