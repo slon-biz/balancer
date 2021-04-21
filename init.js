@@ -29,9 +29,9 @@
 
     function init() {
         if ('requestIdleCallback' in w) {
-            w.requestIdleCallback(load, { timeout: 3000 });
+            w.requestIdleCallback(load, { timeout: 1000 });
         } else {
-            setTimeout(load, 3000);
+            setTimeout(load, 1000);
         }
     }
 
