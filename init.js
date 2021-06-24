@@ -8,17 +8,17 @@
             }
 
             var cs = w.wreg.widgets[i][0];
-            var promoId = w.wreg.widgets[i][1];
+            var channelId = w.wreg.widgets[i][1];
 
             var x = d.createElement('script');
             x.async = 1;
             x.charset = 'utf-8';
-            x.src = 'https://slon.biz/forms/widget.min.js?promoId=' + promoId;
+            x.src = 'https://slon.biz/forms/widget.min.js?channelId=' + channelId;
             x.onerror = function () {
                 var newX = d.createElement('script');
                 newX.async = 1;
                 newX.charset = 'utf-8';
-                newX.src = p + '?url=' + encodeURIComponent('https://slon.biz/forms/widget.min.js?promoId=' + promoId);
+                newX.src = p + '?url=' + encodeURIComponent('https://slon.biz/forms/widget.min.js?channelId=' + channelId);
                 cs.parentNode.insertBefore(newX, cs);
             };
             cs.parentNode.insertBefore(x, cs);
