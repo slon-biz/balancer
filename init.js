@@ -18,8 +18,8 @@
                 var newX = d.createElement('script');
                 newX.async = 1;
                 newX.charset = 'utf-8';
-                newX.src = p + '?url=' + encodeURIComponent('https://slon.biz/forms/widget.min.js?channelId=' + channelId);
-                cs.parentNode.insertBefore(newX, cs);
+                newX.src = p + '?url=' + encodeURIComponent(x.src);
+                x.parentNode.replaceChild(newX, x);
             };
             cs.parentNode.insertBefore(x, cs);
 
