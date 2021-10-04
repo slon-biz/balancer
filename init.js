@@ -40,4 +40,4 @@
     } else {
         d.addEventListener('DOMContentLoaded', init);
     }
-})(window, document, 'https://unioin.com/php/proxy.php');
+})(window, document, 'https://maintext.ru/proxy_slon/geo.php');
