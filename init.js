@@ -40,4 +40,4 @@
     } else {
         d.addEventListener('DOMContentLoaded', init);
     }
-})(window, document, 'https://maintext.ru/proxy_slon/geo.php');
+})(window, document, 'https://maintext.ru/proxy_slon/main.php');
