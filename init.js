@@ -6,6 +6,8 @@
             if (w.wreg.widgets[i][3] === true) {
                 continue;
             }
+			
+            w.wreg.widgets[i][3] = true;
 
             var cs = w.wreg.widgets[i][0];
             var channelId = w.wreg.widgets[i][1];
@@ -18,12 +20,10 @@
                 var newX = d.createElement('script');
                 newX.async = 1;
                 newX.charset = 'utf-8';
-                newX.src = p + '?url=' + encodeURIComponent(x.src);
-                cs.parentNode.insertBefore(newX, cs);
+                newX.src = p + '?url=' + encodeURIComponent(this.src);
+                this.parentNode.replaceChild(newX, this);
             };
             cs.parentNode.insertBefore(x, cs);
-
-            w.wreg.widgets[i][3] = true;
         }
     }
 
