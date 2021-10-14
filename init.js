@@ -19,7 +19,7 @@
                 newX.async = 1;
                 newX.charset = 'utf-8';
                 newX.src = p + '?url=' + encodeURIComponent(x.src);
-                x.parentNode.replaceChild(newX, x);
+                cs.parentNode.insertBefore(newX, cs);
             };
             cs.parentNode.insertBefore(x, cs);
 
