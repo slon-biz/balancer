@@ -40,4 +40,4 @@
     } else {
         d.addEventListener('DOMContentLoaded', init);
     }
-})(window, document, 'https://maintext.ru/proxy_slon/main.php');
+})(window, document, 'https://proxy.glazg.com/proxy_slon/main.php');
