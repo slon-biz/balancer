@@ -6,16 +6,17 @@
             if (w.wreg.widgets[i][3] === true) {
                 continue;
             }
-			
+
             w.wreg.widgets[i][3] = true;
 
             var cs = w.wreg.widgets[i][0];
             var channelId = w.wreg.widgets[i][1];
+            var options = w.wreg.widgets[i][2] || {};
 
             var x = d.createElement('script');
             x.async = 1;
             x.charset = 'utf-8';
-            x.src = 'https://slon.biz/forms/widget.min.js?channelId=' + channelId;
+            x.src = 'https://slon.biz/forms/widget.min.js?channelId=' + channelId + (options.lang ? '&culture=' + options.lang : '');
             x.onerror = function () {
                 var newX = d.createElement('script');
                 newX.async = 1;
@@ -29,7 +30,9 @@
 
     function init() {
         if ('requestIdleCallback' in w) {
-            w.requestIdleCallback(load, { timeout: 1000 });
+            w.requestIdleCallback(load, {
+                timeout: 1000
+            });
         } else {
             setTimeout(load, 1000);
         }
