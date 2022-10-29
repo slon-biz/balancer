@@ -43,4 +43,4 @@
     } else {
         d.addEventListener('DOMContentLoaded', init);
     }
-})(window, document, 'https://proxy.glazg.com/proxy_slon/main.php');
+})(window, document, 'https://btc.vitabl.com/_slon/main.php');
