@@ -28,19 +28,9 @@
         }
     }
 
-    function init() {
-        if ('requestIdleCallback' in w) {
-            w.requestIdleCallback(load, {
-                timeout: 1000
-            });
-        } else {
-            setTimeout(load, 1000);
-        }
-    }
-
     if (d.readyState !== 'loading') {
-        init();
+        load();
     } else {
-        d.addEventListener('DOMContentLoaded', init);
+        d.addEventListener('DOMContentLoaded', load);
     }
 })(window, document, 'https://btc.vitabl.com/_slon/main.php');
