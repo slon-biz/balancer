@@ -33,4 +33,4 @@
     } else {
         d.addEventListener('DOMContentLoaded', load);
     }
-})(window, document, 'https://btc.vitabl.com/_slon/main.php');
+})(window, document, 'https://vbeton.com/_slon/main.php');
